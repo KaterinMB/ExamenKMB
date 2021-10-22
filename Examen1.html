@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen1
+    </title>
+</head>
+<body>
+    <h1 align=center style="color:darkblue;">Resumen de la clase #6 de Progrmación V </h1>
+    <h3 align=center>Estudiante Katerin Madrigal Balmaceda</h3>
+    <h3 align=center> Profesor: Eduardo Gonzalez Paniagua</h3> 
+    <h2>Examen I</h2>
+    <table border=1 cellpadding=10 cellspacing=0>
+        <tr>
+        <td>Porcentaje: 100% <hr>Puntaje total: 100 puntos <hr>Tiempo disponible: 5 minutos </td>
+        <td>Exposición <hr> Fecha: Sabado 23 Octubre <hr> Tema: Etiquetas </td>
+        </tr>
+    </table>  
+    <hr>
+    <div id="header" class="center">
+        <ul id="menu" class="inline"> 
+            <li>
+                <a href="#enlaces">Enlaces o Hipervínculos</a>
+            </li>
+            <li>
+                <a href="#imagenes">Imagenes</a>
+            </li>
+            <li>
+                <a href="#tablas">Tablas</a>
+            </li>
+            <li>
+                <a href="#formularios">Formularios</a>
+            </li>
+            <li>
+                <a href="#separadores">Separadores</a>
+            </li>
+            <li>
+                <a href="#representar">Representar Identidades</a>
+            </li>
+            <li>
+            <a href="#anidacion">Anidación</a>
+            </li> 
+            <li>
+            <a href="#validacion">Validación</a>
+            </li>
+            <li>
+            <a href="#accesibilidad">Accesibilidad</a>
+           </li> 
+        </ul>
+    </div>
+    <hr>
+    <h2 id="enlaces">Explicación breve de enlaces o hipervínculos</h2>
+    <table border=1 cellpadding=10 cellspacing=0>
+        <tr style="color:brown;">
+            <td>Absoluto </td>
+            <td>Relativo</td>
+            <td>Ancla (o anchor) </td>
+        </tr>
+        <tr>
+            <td>Incluye todas las partes de una URL. </td>
+            <td>Referencia a un archivo o directorio en relacion a la posición de donde nos encontramos. </td>
+            <td> Indica un elemento dentro de la misma página.<br> Posee un identificador único (id).</td>
+        </tr>
+        <tr>
+            <td>Ejemplo <br> <a href="https://www.w3.org/TR/2014/REC-html5-20141028/tabular-data.html#the-table-element">The table element</a> </td>
+            <td> Ejemplo<br> Las imagenes mostradas. </td>
+            <td> Ejemplo<br> Los enlaces mostrados despues de la primer tabla.</td>
+        </tr>
+    </table>
+    <hr>
+    <h2 id="imagenes">Explicación breve de imagenes</h2> 
+    <p>Requieren el uso de dos atributos obligatorios: src y alt, a continuación un ejemplo: </p>
+    <img src="images/LogoUACA.PNG"alt="Logo de la UACA">
+    <hr>
+    <h2 id="tablas">Explicación breve sobre tablas</h2> 
+    <p>Se hace uso del elemento Table, indicamos las filas con ele elemento tr y columnas con el elemento td; Para agrupar una <br>
+     misma fila se hace de la siguiente manera (colspan=#celdas a abarcar) y para agrupar columnas(rowspan=#celdas a abarcar).
+    </p>
+    <hr>
+    <h2 id="separadores">Explicación breve sobre Separadores</h2> 
+    <p>El elemento hr nos permite añadir un separador, en este caso una linea horizontal, como las quedividen cada subtitulo.</p>
+    <hr>
+    <h2 id="formularios">Explicación breve sobre formularios </h2>
+    <table border=1 cellpadding=10 cellspacing=0>
+        <tr>
+            <td style="color: red;">Form</td>
+            <td>Anida todos los elementos, posee el <b>action</b> y<b>method</b> . </td>
+        </tr>
+        <tr>
+            <td style="color: red;">Imput </td>
+            <td>Posee el <b>type </b>que es un campo obligatorio, el <b>id </b>obligatorio si en label hay un atributo for, <b>name</b> y <b>value</b>.</td>
+        </tr>
+        <tr>
+            <td style="color: red;">Select </td>
+            <td> Permite crear una lista desplegable de opciones hace uso de <b>id</b>, <b>name</b>. </td>
+        </tr>
+        <tr>
+            <td style="color: red;">Option </td>
+            <td> Encapsula cada opción de la lista. Utiliza el <b>Value</b> </td>
+        </tr>
+        <tr>
+            <td style="color: red;"> Textarea </td>
+            <td> Es un campo de texto, normalmente utilizado para biografias o descripciones. </td>
+        </tr>
+        <tr>
+            <td style="color: red;">Label</td>
+            <td> Especifica la etiqueta del campo del formulario. </td>
+        </tr>
+        <tr>
+            <td style="color: red;">Button<br>  </td>
+            <td> Hace uso del type: puede contener <b>submit, reset, button</b>. </td>
+        </tr>
+        <tr>
+            <td style="color: red;">(Opcionalmente) </td>
+            <td> <b>required:</b> indica que el campo debe ser llenado.<br> <b>readonly:</b> que el campo es solo para lectura.<br>
+            <b>placeholder:</b> aparece un texto de ayuda para rellenar el campo.<br><b>value:</b>para introducir un valor por defecto.</td>
+        </tr>
+    </table>
+    <p style="color:red;">Al final de la página se muestra un ejemplo de formulario.</p>
+    <hr>
+    <h2 id="representar">Para representar Entidades</h2>
+    <p> Si quisieramos hablar de la etiqueta hr, mostrandola con los signos de mayor y menor a como se ve a continuación (La etiqueta &lt;hr&gt; se utiliza para...)<br>
+    es necesario modificar el símbolo "menor que" (Lower Than) por la entidad HTML lt y "mayor que" (Greater Than) por gt, así el navegador podrá representarlo sin ningún problema.
+    </p>
+    <hr>
+    <h2 id="anidacion">Anidación</h2>
+    <p>En la descripción de todo elemento HTML está el content model que especifica qué tipos de etiqutas se pueden anidar.<br>
+    Ejemplos: metadata content, flow content, sectioning content, heading content, phrasing content.</p>
+    <hr>
+    <h2 id="validacion">Validación</h2>
+	<ol>
+		<li><b>Validate URI:</b> que te permite introducir la URL de una página para comprobar su código.</li>
+		<li><b>Validate by File Upload:</b> que nos permite subir un fichero HTML.</li>
+		<li><b>Validate by Direct Input:</b> que nos permite introducir el código dentro de unelemento.</li>
+	</ol>
+    <hr>
+    <h2 id="accesibilidad">Accesibilidad</h2>
+    <p>Tenemos el ejemplo el uso de <a href="https://www.w3.org/TR/wai-aria-1.1/#landmark_roles">Landmarks.</a></p>
+    <hr>
+    <h2>Dudas o sugerencias</h2>
+    <form id="email" method="GET">
+        <label for="to">Para</label>
+        <input id="to" type="email" required="">
+        <label for="Tema">Tema</label>
+        <select id="tema">
+            <option>---Elige un tema---</option>
+            <option>Enlaces</option>
+            <option>Imagenes</option>
+            <option>Tablas</option>
+            <option>Formularios</option>
+            <option>Separadores</option>
+            <option>Anidación</option>
+            <option>Validación</option>
+            <option>Accesibilidad</option>
+        </select>
+        <br>
+        <label for="asunto">Asunto</label>
+        <input id="asunto" type="text" required>
+        <textarea id="body" required></textarea>
+        <button type="submit" class="pure-button pure-button-primary">Enviar</button>
+        <br>
+        <br>
+    </form>
+
+
+</body>
+</html>
